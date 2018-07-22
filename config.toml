@@ -17,5 +17,3 @@ canonifyurls = true
   twitter = "taki_tflare" # optional
   github = "tflare" # optional
   
-[context.deploy-preview.environment]
-  HUGO_VERSION = “0.18”
