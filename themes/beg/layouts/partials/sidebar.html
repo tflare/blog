@@ -1,0 +1,58 @@
+
+<aside class="site">
+<script>
+  (function() {
+    var cx = '009556866949089595753:dtes_0-kk-8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      {{ range first 10 .Site.Pages }}
+      <a href="{{ .Permalink }}" class="list-group-item">{{ .Title }}</a>
+      {{ end }}
+    </div>
+  </div>
+
+  {{ range $key, $value := .Site.Taxonomies }}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">{{ $key | singularize }}</h2>
+    </div>
+    <div class="list-group">
+      {{ range first 10 $value.ByCount }}
+      <a href="{{ $.Site.BaseURL}}{{ $key }}/{{ .Name | urlize }}" class="list-group-item">{{ .Name }}</a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+  
+    <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">site</h2>
+    </div>
+    <div class="list-group">
+      <a href="http://tflare.com/" class="list-group-item">tflare.com</a>
+      </div>
+  </div>
+  
+    <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">twitter</h2>
+    </div>
+    <div class="list-group">
+      <a href="https://twitter.com/taki_tflare" class="list-group-item">taki_tflare</a>
+      </div>
+  </div>   
+
+</aside>
+
