@@ -6,7 +6,7 @@ MetaDataFormat = "toml"
 paginate = 10 # optional
 copyright = "Copyright (c) 2018 - , hiroyuki_t blog"
 canonifyurls = true
-publishdir = "docs"
+#publishdir = "docs"
 #disqusShortname = "http-d-tflare-com.disqus.com" # optional
 
 [params]
@@ -16,3 +16,6 @@ publishdir = "docs"
   cover = "images/cover.png" # optional
   twitter = "taki_tflare" # optional
   github = "tflare" # optional
+  
+[context.deploy-preview.environment]
+  HUGO_VERSION = “0.18”
