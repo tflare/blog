@@ -1,0 +1,18 @@
+theme="polymer"
+baseurl = "https://b.tflare.com/"
+#languageCode = "ja-jp"
+title = "hiroyuki_t blog"
+MetaDataFormat = "toml"
+paginate = 10 # optional
+copyright = "Copyright (c) 2018 - , hiroyuki_t blog"
+canonifyurls = true
+publishdir = "docs"
+#disqusShortname = "http-d-tflare-com.disqus.com" # optional
+
+[params]
+  author = "hiroyuki_t"
+  photo = "images/photo.png" # optional
+  profile = "images/profile.png" # optional
+  cover = "images/cover.png" # optional
+  twitter = "taki_tflare" # optional
+  github = "tflare" # optional
