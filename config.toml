@@ -1,10 +1,10 @@
 theme="polymer"
 baseurl = "https://b.tflare.com/"
 #languageCode = "ja-jp"
-title = "hiroyuki_t blog"
+title = "hiroyuki_tの投資日記"
 MetaDataFormat = "toml"
 paginate = 10 # optional
-copyright = "Copyright (c) 2018 - , hiroyuki_t blog"
+copyright = "Copyright (c) 2018 - , hiroyuki_tの投資日記"
 canonifyurls = true
 #publishdir = "docs"
 #disqusShortname = "http-d-tflare-com.disqus.com" # optional
@@ -16,4 +16,3 @@ canonifyurls = true
   cover = "images/cover.png" # optional
   twitter = "taki_tflare" # optional
   github = "tflare" # optional
-  
